@@ -1,0 +1,34 @@
+[project]
+name = "lintem"
+version = "0.1.0"
+description = "have agents fix your poorly type hinted code"
+readme = "README.md"
+authors = [{ name = "zzstoatzz", email = "thrast36@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = ["pydantic_ai_slim[openai]", "ruff"]
+
+[project.scripts]
+lintem = "lintem:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "F", # pyflakes
+    "I", # isort
+    "B", # flake8-bugbear
+]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
