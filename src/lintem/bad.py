@@ -1,2 +1,1 @@
-def make_ruff_mad(x):
-    return x + 1
+make_ruff_mad = lambda x: x + 1
