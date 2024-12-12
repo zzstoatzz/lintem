@@ -1,3 +1,8 @@
+## lintem
+
+use `pydantic_ai` to fix `ruff` lint errors.
+
+
 ```python
 » cat src/lintem/bad.py
 make_ruff_mad = lambda x: x + 1
